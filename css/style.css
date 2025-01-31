@@ -66,6 +66,51 @@ a {
 	z-index: 9;
 }
 
+.nav-bg {
+    position: relative;
+    width: 100%;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 4;
+}
+
+.nav-bg.fixed {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background after scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-logo{
+	display: none;
+}
+
+.nav-bg.fixed .nav-logo{
+	display: block;
+}
+
+.nav-bg.fixed .main-logo {
+	padding: 0px 35px 0;
+}
+
+.nav-bg.fixed .logo-sec img {
+	width: 100px;
+}
+
+.nav-bg.fixed .main-logo::after {
+	border-left: 85px solid transparent;
+	border-right: 85px solid transparent;
+}
+
+.nav-bg.fixed .nav-custom {
+	margin-left: 15%;
+}
+
+.nav-bg.fixed .nav-logo .main-logo{
+	top: 0;
+}
+
 .navbar-toggler {
 	border: none;
 	padding: 0;
@@ -2200,9 +2245,13 @@ td {
 		display: none;
 	}
 
+	.nav-link.show{
+		color: white!important;
+	}
+
 	.carousel-item-content {
-		position: initial;
-		top: auto;
+		/* position: initial; */
+		top: 32%;
 		transform: none;
 		background-color: #0000003d;
 		padding: 0;
@@ -2487,6 +2536,10 @@ td {
 
 	.banner-2 {
 		height: 225px;
+	}
+
+	.items-list ul li {
+		width: 100%;
 	}
 
 }

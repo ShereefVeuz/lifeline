@@ -15,6 +15,17 @@ btn.on('click', function(e) {
 });
 
 
+// navbar
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".nav-bg");
+  if (window.scrollY > 200) {
+      navbar.classList.add("fixed");
+  } else {
+      navbar.classList.remove("fixed");
+  }
+});
+
+
 var counted = 0;
         $(window).scroll(function () {
 
