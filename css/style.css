@@ -290,13 +290,14 @@ a {
 	z-index: 5;
 	background-color: var(--btn-color);
 	padding: 25px 35px 0;
+	border-radius: 0 0 3px 3px;
 }
 
 .main-logo::after {
     content: "";
 	position: absolute;
 	left: 0;
-	bottom: -50px;
+	bottom: -49px;
 	width: 100%;
 	height: 0;
 	border-left: 110px solid transparent;
@@ -1397,6 +1398,10 @@ a {
 	line-height: 22px;
 }
 
+.location-contact h6:hover{
+	color: #f6ad22;
+}
+
 .location-contact h6 a{
 	font-weight: 400;
 	font-size: 14px;
@@ -1404,6 +1409,10 @@ a {
 	margin: 0;
 	text-align: start;
 	line-height: 22px;
+}
+
+.location-contact h6 a:hover{
+	color: #f6ad22;
 }
 
 
@@ -1982,7 +1991,7 @@ td {
 	}
 
 	.main-logo::after {
-		bottom: -25px;
+		bottom: -24px;
 		border-left: 45px solid transparent;
 		border-right: 45px solid transparent;
 		border-top: 25px solid var(--btn-color);
