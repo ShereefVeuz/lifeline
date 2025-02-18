@@ -216,6 +216,18 @@ window.onresize = function(){
 
 
 
+// AOS.init();
+//  AOS.init({
+//     duration: 1000, 
+//     easing: 'ease-in-out', 
+//     once: true, 
+//   });
+
+// AOS.init({disable: 'mobile'});
+
+
+
+
         // (c) 2020-2023 Written by Simon Köhler in Panama
         // simonkoehler.com
 
@@ -255,5 +267,17 @@ window.onresize = function(){
                 });
             }
         });
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
         
+            
         
